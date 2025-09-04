@@ -87,9 +87,13 @@ h1 {
         width: 100%;
         box-sizing: border-box;
     }
-    .product-card {
+    .product-card.small{
         margin: 20px;
+        max-width: 140px;
+        padding: 10px;
     }
+    .product-card.small img {
+        max-width: 70px;
 }
 
 @media (max-width: 599px) {
