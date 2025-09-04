@@ -17,10 +17,9 @@ h1 {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     margin: 20px auto;
     padding: 20px;
-    max-width: 320px;
+    max-width: 220px;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     transition: box-shadow 0.3s;
 }
@@ -31,10 +30,10 @@ h1 {
 
 .product-card img {
     width: 100%;
-    max-width: 220px;
+    max-width: 120px;
     height: auto;
     border-radius: 8px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .product-card h2 {
@@ -43,12 +42,11 @@ h1 {
 }
 
 .product-card p {
-    font-size: 1em;
+    font-size: 0.95em;
     color: #555;
     margin-bottom: 10px;
     text-align: center;
-    float: inline-block;
-    display:block;
+    display: block;
     margin-top: 0;
 
 }
