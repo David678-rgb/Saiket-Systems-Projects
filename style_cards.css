@@ -1,104 +1,105 @@
-/* Product Cards CSS for alignment, responsiveness, and button hover effects */
-body {
+body:{
     font-family: Arial, sans-serif;
     background: #f4f4f4;
     margin: 0;
     padding: 0;
-}
 
-h1 {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.product-card {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 220px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: box-shadow 0.3s;
-}
-
-.product-card:hover {
-    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-}
-
-.product-card img {
-    width: 100%;
-    max-width: 120px;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-.product-card h2 {
-    margin: 10px 0 5px 0;
-    font-size: 1.2em;
-}
-
-.product-card p {
-    font-size: 0.95em;
-    color: #555;
-    margin-bottom: 10px;
-    text-align: center;
-    display: block;
-    margin-top: 0;
-
-}
-
-.product-card span {
-    font-weight: bold;
-    color: #333;
-    display: block;
-    margin-bottom: 10px; 
-    text-align: center;
-}
-
-.product-card button {
-    background: #ff6600;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 24px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
-}
-
-.product-card button:hover {
-    background: #e65c00;
-    transform: scale(1.07);
-    box-shadow: 0 2px 8px rgba(255,102,0,0.2);
-}
-
-@media (min-width: 600px) {
-    /* Container for product cards with flex wrap */
-    .cards-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-        width: 100%;
-        box-sizing: border-box;
+    h1 {
+        text-align: center;
+        margin-top: 30px;
     }
-    .product-card.small{
-        margin: 20px;
-        max-width: 140px;
-        padding: 10px;
-    }
-    .product-card.small img {
-        max-width: 70px;
-}
 
-@media (max-width: 599px) {
     .product-card {
-        max-width: 95vw;
-        margin: 15px auto;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        margin: 20px auto;
+        padding: 20px;
+        max-width: 220px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: box-shadow 0.3s;
+    }
+
+    .product-card:hover {
+        box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    }
+
+    .product-card img {
+        width: 100%;
+        max-width: 120px;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    .product-card h2 {
+        margin: 10px 0 5px 0;
+        font-size: 1.2em;
+    }
+
+    .product-card p {
+        font-size: 0.95em;
+        color: #555;
+        margin-bottom: 10px;
+        text-align: center;
+        display: block;
+        margin-top: 0;
+
+    }
+
+    .product-card span {
+        font-weight: bold;
+        color: #333;
+        display: block;
+        margin-bottom: 10px; 
+        text-align: center;
+    }
+
+    .product-card button {
+        background: #ff6600;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 24px;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background 0.3s, transform 0.2s;
+    }
+
+    .product-card button:hover {
+        background: #e65c00;
+        transform: scale(1.07);
+        box-shadow: 0 2px 8px rgba(255,102,0,0.2);
+    }
+
+    @media (min-width: 600px) {
+        /* Container for product cards with flex wrap */
+        .cards-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .product-card.small{
+            margin: 20px;
+            max-width: 140px;
+            padding: 10px;
+        }
+        .product-card.small img {
+            max-width: 70px;
+        }
+
+    }
+
+    @media (max-width: 599px) {
+        .product-card {
+            max-width: 95vw;
+            margin: 15px auto;
+        }
     }
 }
